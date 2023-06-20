@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html 공부하기</title>
+  </head>
+  <body>
+    <!--
+        2023-06-20 
+        block tag, inline tag, inline-block tag
+        block tag: 한줄씩 가로 길이 100%를 차지하는 tag들 
+        (box model로 인해 사이즈가 변화함)
+
+        inline tag: 내부 컨텐츠의 길이만큼만 공간을 차지하는 tag
+        (tag 사이즈에 영향을 미치는 box model을 가질 수 없음)
+
+        inline-block tag: 내부 컨텐츠의 길이만큼만 공간을 차지하는 tag = iline tag
+        (box model로 인해 사이즈가 변화함 = block tag)
+
+    -->
+
+    <!--
+        box model
+        padding: box 내부의 공간
+        margin: box 외부의 간격
+        border: box에 표현된 선의 굵기
+        width: box의 길이
+        height: box의 높이 
+    -->
+
+    <header>
+      <!-- h tag: h1 ~ h6 -->
+      <h1>페이지 제목</h1>
+    </header>
+
+    <nav>
+      <!-- <section>
+        <button type="button" style="width: 200px">버튼1</button>
+      </section> -->
+
+      <!--
+        form: input, textarea 관련 value를 submit 하기 위한 tag
+      -->
+      <form>
+        <div>
+          <input type="text" style="padding: 5px 10px" />
+          <input type="password" />
+          <input type="number" />
+          <input type="date" />
+
+          <button type="button">확인</button>
+        </div>
+        <div>
+          <!-- 
+                texterea: 여러 줄의 텍스트를 입력해야 되는 경우 사용
+            -->
+          <textarea></textarea>
+        </div>
+      </form>
+    </nav>
+
+    <main>
+      <article>
+        <!-- article: 내용을 넣는 태그, 반드시 제목 태그와 함께 사용 -->
+        <!-- /가 없으면 여는 태그, 있으면 닫는 태그, 일반적으로는 한쌍 -->
+        <h2>this is a paragraph</h2>
+        <span style="width: 200px">내용을 입력해주세요.</span>
+        <span>내용을 입력해주세요.</span>
+        <span>내용을 입력해주세요.</span>
+      </article>
+      <article>
+        <!-- list tag -->
+        <!--
+            ul tag: 순서가 정해지지 않은 목록을 표현
+            li가 반드시 들아가야함
+        -->
+        <ul>
+          <li>list item1</li>
+          <li>list item2</li>
+        </ul>
+
+        <!--
+            ol tag: 순서가 있는 목록을 표현
+        -->
+        <ol>
+          <li>list item1</li>
+          <li>list item2</li>
+        </ol>
+
+        <!--
+            dl tag: 제목이 있는 목록을 표현
+            dt: 제목 용도의 tag (1개만 들어감)
+            dd: 리스트 용도의 tag
+        -->
+        <dl>
+          <dt>list title</dt>
+          <dd>list item 1</dd>
+          <dd>list item 2</dd>
+          <dd>list item 3</dd>
+        </dl>
+      </article>
+
+      <aside>
+        <!--
+            text 관련 태그들은 전부 inline tag
+            <br /> inline tag를 한줄 내리는 tag (홑태그)
+        -->
+        <h3>텍스트 관련 태그</h3>
+        <strong>text strong</strong><br />
+        <i>text italic</i><br />
+        <em>text em</em><br />
+        <ins>text insert</ins>
+        <del>text delete</del>
+      </aside>
+    </main>
+
+    <!--
+        div: 예전에 레이아웃의 단락을 구분하는 용도로 자주 사용 (지금도 자주 쓰임)
+        
+        section, article, main, header, footer, aside
+        용도에 따라 레이아웃 단락을 구분하기 위한 용도 (html5)
+    -->
+  </body>
+</html>
