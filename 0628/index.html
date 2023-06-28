@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html 공부하기</title>
+  </head>
+  <body>
+    <!--
+      상대 경로 
+      ./ : 지금 현재의 폴더 기준 (아무 것도 없어도 현재 폴더)
+      슬래시(/): 폴더를 구분할 때 사용
+    -->
+    <!--
+      src: 이미지 파일명과 경로
+      width: 가로 길이
+      height: 세로 길이
+      alt: 명시적으로 이미지의 용도나 명칭을 적어줌
+    -->
+    <img src="cat1.webp" width="300px" alt="고양이" />
+    <img src="../cat1.webp" width="300px" alt="고양이" />
+    <img src="../0620/img/cat2.jpg" width="300px" alt="고양이2" />
+    <!--
+      절대 경로: 슬래시(/) 부터 시작하는 경로
+    -->
+    <img src="/cat1.webp" width="300px" alt="고양이" />
+    <img src="/0628/img/cat2.jpg" width="300px" alt="고양이2" />
+  </body>
+</html>
