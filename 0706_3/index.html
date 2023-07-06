@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        HEX: 00 ~ ff (ff로 갈수록 채도가 짙어지고 00으로 갈수록 채도가 낮아짐)
+        #으로 시작해서 #000000 #+여섯자리 코드
+        00(red)00(green)00(blue)
+        00 ~ 99 표현 가능
+        99를 넘어가는 순간 aa부터 시작
+        aa ~ ff 까지 표현 가능
+        */
+      p {
+        color: #666;
+      }
+      .text-green {
+        color: #00ff00;
+      }
+      .text-red {
+        color: #ff0000;
+      }
+      .text-blue {
+        color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="content">
+      HTML is the standard markup
+      <span class="text-green"> for Web pages.</span> With HTML
+      <span class="text-orange"> can</span>
+      <span class="text-red"> your own Website.</span> HTML is easy to learn -
+      You will<span class="text-blue"> enjoy it!</span>
+    </p>
+  </body>
+</html>

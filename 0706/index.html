@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        RGB: Red, Green, Blue 0~255
+        0에 가까울수록 색이 채도가 낮아지고 255에 가가워지면 채도가 짙어짐 
+        color: rgba(red, green, blue, alpha)
+        alpha: 0~! 소수점으로 표현 가능
+        */
+      .text-green {
+        color: rgba(0, 180, 0, 1);
+      }
+      .text-blue {
+        color: rgba(0, 0, 255, 1);
+      }
+      .text-red {
+        color: rgba(255, 0, 0, 1);
+      }
+      .text-orange {
+        color: rgb(255, 93, 18);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="content">
+      HTML is the standard markup
+      <span class="text-green"> for Web pages.</span> With HTML
+      <span class="text-orange"> can</span>
+      <span class="text-red"> your own Website.</span> HTML is easy to learn -
+      You will<span class="text-blue"> enjoy it!</span>
+    </p>
+  </body>
+</html>
